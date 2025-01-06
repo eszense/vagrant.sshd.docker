@@ -1,0 +1,3 @@
+.vagrant
+vagrant.sshd.docker.box
+tmp/

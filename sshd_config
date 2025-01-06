@@ -1,0 +1,27 @@
+# https://secscan.acron.pl/centos7/5/2/14
+# https://www.linkedin.com/pulse/securing-ssh-cve-2024-638-mitigation-understanding-parvesh-paliwal-cqxnc
+# https://www.digitalocean.com/community/tutorials/how-to-harden-openssh-on-ubuntu-20-04
+# https://man.openbsd.org/sshd_config
+
+LoginGraceTime 40
+
+PermitRootLogin no
+
+MaxAuthTries 1
+
+PasswordAuthentication no
+PermitEmptyPasswords no
+
+KbdInteractiveAuthentication no
+KerberosAuthentication no
+GSSAPIAuthentication no
+
+X11Forwarding no
+PermitUserEnvironment no
+
+AllowAgentForwarding no
+PermitTunnel no
+
+AllowUsers vagrant@10.88.0.53
+
+
